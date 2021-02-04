@@ -29,7 +29,6 @@
   become: true
   apt:
     name: "{{ item }}"
-    state: latest
     update_cache: "yes"
   loop:
     - docker-ce
@@ -41,7 +40,6 @@
   become: true
   apt:
     name: docker.io
-    state: latest
     update_cache: "yes"
   when: ansible_distribution_version == "20.04"
 
