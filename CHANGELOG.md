@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.0] - 2021-02-26
+## [1.0.0] - 2021-02-26
 
 ## Added
 
@@ -22,6 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial role! 🚀
 
-[Unreleased]: https://github.com/iancleary/ansible-role-zsh_antibody/compare/v0.2.0...HEAD
-[0.2.0]: https://github.com/iancleary/ansible-role-zsh_antibody/releases/tag/v0.2.0
-[0.1.0]: https://github.com/iancleary/ansible-role-zsh_antibody/releases/tag/v0.1.0
+[Unreleased]: https://github.com/iancleary/ansible-role_docker/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/iancleary/ansible-role_docker/releases/tag/v1.0.0
+[0.1.0]: https://github.com/iancleary/ansible-role_docker/releases/tag/v0.1.0
