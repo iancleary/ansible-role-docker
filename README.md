@@ -37,19 +37,36 @@ Role Variables
 
 A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
-```yaml
 ---
+
+```yaml
 docker_install_compose: true
+```
+Boolean value to install docker-compose
+
+---
+
+```yaml
 docker_compose_version: 1.28.5
+```
+
+Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/)
+
+---
+
+```yaml
 docker_compose_path: /usr/local/bin/docker-compose
 ```
+Path to install docker-compose executable to
+
+---
 
 Dependencies
 ------------
 
 A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-N/A
+`N/A`
 
 Example Playbook
 ----------------
