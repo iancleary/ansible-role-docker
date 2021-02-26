@@ -3,4 +3,4 @@
 docker_install_compose: true
 docker_compose_version: 1.28.5
 docker_compose_path: /usr/local/bin/docker-compose
-docker_users: []
+docker_users: ['{{ ansible_ssh_user }}']
