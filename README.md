@@ -40,7 +40,7 @@ A description of the settable variables for this role should go here, including 
 ```yaml
 ---
 docker_install_compose: true
-docker_compose_version: 1.25.4
+docker_compose_version: 1.28.5
 docker_compose_path: /usr/local/bin/docker-compose
 ```
 
