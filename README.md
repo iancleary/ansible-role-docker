@@ -60,10 +60,10 @@ docker_compose_path: /usr/local/bin/docker-compose
 Path to install docker-compose executable to
 
 ```yaml
-docker_users: ['{{ ansible_ssh_user}}']
+docker_users: []
 ```
 
-The users to be added to the docker group, this defaults to ansible_user. This allows them to run docker without `sudo`.
+The users to be added to the docker group, this defaults to an empty list. This allows the listed users to run docker without `sudo`.
 
 ---
 
