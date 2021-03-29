@@ -47,7 +47,7 @@ Boolean value to install docker-compose
 ---
 
 ```yaml
-docker_compose_version: 1.28.5
+docker_compose_version: 1.28.6
 ```
 
 Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/)
