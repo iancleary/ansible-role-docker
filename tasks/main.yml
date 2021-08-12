@@ -42,6 +42,7 @@
   when: ansible_distribution_version == "20.04"
 
 - name: Docker - Create the docker group
+  become: true
   group:
     name: docker
     state: present
@@ -53,12 +54,6 @@
     groups: ["docker"]
     append: "yes"
   loop: "{{ docker_users|flatten(levels=1) }}"
-
-- name: Docker - Start Docker on boot
-  become: true
-  service:
-    name: "docker"
-    enabled: "yes"
 
 - name: Docker - Check current docker-compose version.
   command: docker-compose --version
