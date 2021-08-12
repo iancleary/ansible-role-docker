@@ -6,12 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [2.0.1] - 2021-08-12
+
+### Changed
+
+- Bumped docker-compose to [1.29.2](https://github.com/docker/compose/releases/tag/1.29.2)
+
 ## [2.0.0] - 2021-08-12
 
 ### Changed
 
 - Switched to root user with `become: true`
-- Bumped docker-compose to [1.29.2](https://github.com/docker/compose/releases/tag/1.29.2)
 
 ### Removed
 
@@ -39,7 +45,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial role! 🚀
 
-[Unreleased]: https://github.com/iancleary/ansible-role-docker/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/iancleary/ansible-role-docker/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/iancleary/ansible-role-docker/releases/tag/v2.0.1
 [2.0.0]: https://github.com/iancleary/ansible-role-docker/releases/tag/v2.0.0
 [1.0.1]: https://github.com/iancleary/ansible-role-docker/releases/tag/v1.0.1
 [1.0.0]: https://github.com/iancleary/ansible-role-docker/releases/tag/v1.0.0
