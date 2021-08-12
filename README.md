@@ -81,7 +81,15 @@ Including an example of how to use your role (for instance, with variables passe
 
 ```yaml
 - hosts: servers
-  become: true
+  user: unprivelaged
+  roles:
+    - role: iancleary.docker
+      become: true
+```
+
+```yaml
+- hosts: servers
+  user: root
   roles:
     - role: iancleary.docker
 ```
