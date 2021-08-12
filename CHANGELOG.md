@@ -6,9 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2021-08-11
+
+### Changed
+
+- Switched to root user with `become: true`
+### Removed
+
+- Removed start on boot command, since it is already the [default on Debian and Ubuntu based systems](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
+
 ## [1.0.1] - 2021-03-28
 
-## Changed
+### Changed
 
 - Bumped docker-compose to [1.28.6](https://github.com/docker/compose/releases/tag/1.28.6)
 
@@ -18,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Descriptions of role variables
 
-## Changed
+### Changed
 
 - Bumped docker-compose to [1.28.5](https://github.com/docker/compose/releases/tag/1.28.5)
 
