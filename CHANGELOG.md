@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Switched to root user with `become: true`
+- Bumped docker-compose to [1.29.2](https://github.com/docker/compose/releases/tag/1.29.2)
+
 ### Removed
 
 - Removed start on boot command, since it is already the [default on Debian and Ubuntu based systems](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
