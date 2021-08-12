@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2021-08-11
 
+### Changed
+
+- Switched to root user with `become: true`
 ### Removed
 
 - Removed start on boot command, since it is already the [default on Debian and Ubuntu based systems](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
