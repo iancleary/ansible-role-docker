@@ -28,13 +28,19 @@
       - docker-ce-cli
       - containerd.io
     update_cache: "yes"
-  when: ansible_distribution_version == "18.04"
+  when: ansible_distribution_version == "18.04" and ansible_os_family == "Debian"
 
-- name: Docker - install Docker - 20.04
+- name: Docker - install Docker - 20.04 (Ubuntu)
   ansible.builtin.apt:
     name: docker.io
     update_cache: "yes"
-  when: ansible_distribution_version == "20.04"
+  when: ansible_distribution_version == "18.04" and ansible_os_family == "Debian"
+
+- name: Docker - install Docker - 20.04 (elementary OS 6)
+  ansible.builtin.apt:
+    name: docker.io
+    update_cache: "yes"
+  when: ansible_distribution_version == "6" and ansible_os_family == "elementary OS"
 
 - name: Docker - Create the docker group
   ansible.builtin.group:
