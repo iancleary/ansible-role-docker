@@ -6,7 +6,7 @@ galaxy_info:
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
-  issue_tracker_url: http://github.com/iancleary/ansible-role-docker/issues
+  issue_tracker_url: http://github.com/icancclearynow/ansible-role-docker/issues
 
   license: MIT
 
