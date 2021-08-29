@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: docker
-  author: iancleary
+  author: icancclearynow
   description: Ansible role to install docker and docker-compose
 
   # If the issue tracker for your role is not on github, uncomment the
