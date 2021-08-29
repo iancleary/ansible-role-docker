@@ -11,7 +11,7 @@ ansible-role-docker
     <img src="https://github.com/iancleary/ansible-role-docker/workflows/Release/badge.svg" alt="Release workflow status">
 </a>
 <a href="https://galaxy.ansible.com/iancleary/docker" target="_blank">
-    <img src="https://img.shields.io/badge/ansible--galaxy-iancleary.docker-blue.svg" alt="Ansible Galaxy">
+    <img src="https://img.shields.io/badge/ansible--galaxy-icancclearynow.docker-blue.svg" alt="Ansible Galaxy">
 </a>
 <a href="https://raw.githubusercontent.com/iancleary/ansible-role-docker/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
@@ -83,7 +83,7 @@ Including an example of how to use your role (for instance, with variables passe
 - hosts: servers
   user: unprivelaged
   roles:
-    - role: iancleary.docker
+    - role: icancclearynow.docker
       become: true
 ```
 
@@ -91,7 +91,7 @@ Including an example of how to use your role (for instance, with variables passe
 - hosts: servers
   user: root
   roles:
-    - role: iancleary.docker
+    - role: icancclearynow.docker
 ```
 
 License
