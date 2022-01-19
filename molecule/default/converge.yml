@@ -10,4 +10,4 @@
       changed_when: false
 
   roles:
-    - role: icancclearynow.docker
+    - role: iancleary.docker
