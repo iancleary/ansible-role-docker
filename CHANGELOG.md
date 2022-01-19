@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - username from `icancclearynow` to `iancleary`
+- updated docker-compose to 2.2.3
 
 ## [3.0.0] - 2021-08-29
 
