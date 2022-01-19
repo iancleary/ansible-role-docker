@@ -27,7 +27,6 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 
 Supported and Tested `ansible_os_families`:
 
-* Ubuntu 18.04
 * Ubuntu 20.04
 
 > Pull Requests welcome!
@@ -47,10 +46,10 @@ Boolean value to install docker-compose
 ---
 
 ```yaml
-docker_compose_version: 1.29.2
+docker_compose_version: 2.2.3
 ```
 
-Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/)
+Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/). 
 
 ---
 
@@ -58,6 +57,8 @@ Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.c
 docker_compose_path: /usr/local/bin/docker-compose
 ```
 Path to install docker-compose executable to
+
+> [Where to get docker compose](https://github.com/docker/compose#where-to-get-docker-compose) changed from V1 to V2!
 
 ```yaml
 docker_users: []

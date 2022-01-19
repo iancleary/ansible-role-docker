@@ -2,5 +2,6 @@
 # Docker Compose options.
 docker_install_compose: true
 docker_compose_version: 2.2.3
-docker_compose_path: /usr/local/bin/docker-compose
+docker_compose_path: /usr/local/lib/docker/cli-plugins/docker-compose
+# https://github.com/docker/compose#where-to-get-docker-compose
 docker_users: []
