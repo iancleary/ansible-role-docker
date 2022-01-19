@@ -21,15 +21,6 @@
       deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
   when: ansible_distribution_version == "18.04"
 
-- name: Docker - install Docker - 18.04
-  ansible.builtin.apt:
-    name:
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-    update_cache: "yes"
-  when: ansible_distribution_version == "18.04" and ansible_os_family == "Debian"
-
 - name: Docker - install Docker - 20.04 (Ubuntu)
   ansible.builtin.apt:
     name: docker.io
@@ -71,6 +62,6 @@
 - name: Docker - Install Docker Compose (if configured).
   ansible.builtin.get_url:
     url: "https://github.com/docker/compose/releases/download/\
-          {{ docker_compose_version }}/docker-compose-Linux-x86_64"
+          {{ docker_compose_version }}/docker-compose-linux-x86_64"
     dest: "{{ docker_compose_path }}"
     mode: 0755

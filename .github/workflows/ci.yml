@@ -10,7 +10,7 @@ name: CI
 
 defaults:
   run:
-    working-directory: 'icancclearynow.docker'
+    working-directory: 'iancleary.docker'
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'icancclearynow.docker'
+          path: 'iancleary.docker'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
@@ -43,13 +43,12 @@ jobs:
       matrix:
         distro:
           - ubuntu2004
-          - ubuntu1804
 
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'icancclearynow.docker'
+          path: 'iancleary.docker'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2

@@ -3,17 +3,17 @@ ansible-role-docker
 
 <p align="center">
 
-<a href="https://github.com/icancclearynow/ansible-role-docker/actions?query=workflow%3Aci" target="_blank">
-    <img src="https://github.com/icancclearynow/ansible-role-docker/workflows/CI/badge.svg" alt="CI workflow status">
+<a href="https://github.com/iancleary/ansible-role-docker/actions?query=workflow%3Aci" target="_blank">
+    <img src="https://github.com/iancleary/ansible-role-docker/workflows/CI/badge.svg" alt="CI workflow status">
 </a>
 
-<a href="https://github.com/icancclearynow/ansible-role-docker/actions?query=workflow%3Arelease" target="_blank">
-    <img src="https://github.com/icancclearynow/ansible-role-docker/workflows/Release/badge.svg" alt="Release workflow status">
+<a href="https://github.com/iancleary/ansible-role-docker/actions?query=workflow%3Arelease" target="_blank">
+    <img src="https://github.com/iancleary/ansible-role-docker/workflows/Release/badge.svg" alt="Release workflow status">
 </a>
-<a href="https://galaxy.ansible.com/icancclearynow/docker" target="_blank">
-    <img src="https://img.shields.io/badge/ansible--galaxy-icancclearynow.docker-blue.svg" alt="Ansible Galaxy">
+<a href="https://galaxy.ansible.com/iancleary/docker" target="_blank">
+    <img src="https://img.shields.io/badge/ansible--galaxy-iancleary.docker-blue.svg" alt="Ansible Galaxy">
 </a>
-<a href="https://raw.githubusercontent.com/icancclearynow/ansible-role-docker/main/LICENSE" target="_blank">
+<a href="https://raw.githubusercontent.com/iancleary/ansible-role-docker/main/LICENSE" target="_blank">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
 </a>
 </p>
@@ -27,7 +27,6 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 
 Supported and Tested `ansible_os_families`:
 
-* Ubuntu 18.04
 * Ubuntu 20.04
 
 > Pull Requests welcome!
@@ -50,13 +49,16 @@ Boolean value to install docker-compose
 docker_compose_version: 1.29.2
 ```
 
-Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/)
+Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/).
+
+> Default to latest stable release at time of writing
 
 ---
 
 ```yaml
 docker_compose_path: /usr/local/bin/docker-compose
 ```
+
 Path to install docker-compose executable to
 
 ```yaml
@@ -83,7 +85,7 @@ Including an example of how to use your role (for instance, with variables passe
 - hosts: servers
   user: unprivelaged
   roles:
-    - role: icancclearynow.docker
+    - role: iancleary.docker
       become: true
 ```
 
@@ -91,7 +93,7 @@ Including an example of how to use your role (for instance, with variables passe
 - hosts: servers
   user: root
   roles:
-    - role: icancclearynow.docker
+    - role: iancleary.docker
 ```
 
 License
@@ -102,6 +104,6 @@ License
 Author Information
 ------------------
 
-This role was created in 2021 by [Ian Cleary](https://icancclearynow.dev).
+This role was created in 2021 by [Ian Cleary](https://iancleary.me).
 
 Inspiration for the structure of this repo came from [Jeff Geerling](https://github.com/geerlingguy/ansible-role-docker).
