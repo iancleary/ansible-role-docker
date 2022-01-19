@@ -46,19 +46,20 @@ Boolean value to install docker-compose
 ---
 
 ```yaml
-docker_compose_version: 2.2.3
+docker_compose_version: 1.29.2
 ```
 
-Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/). 
+Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/).
+
+> Default to latest stable release at time of writing
 
 ---
 
 ```yaml
 docker_compose_path: /usr/local/bin/docker-compose
 ```
-Path to install docker-compose executable to
 
-> [Where to get docker compose](https://github.com/docker/compose#where-to-get-docker-compose) changed from V1 to V2!
+Path to install docker-compose executable to
 
 ```yaml
 docker_users: []
