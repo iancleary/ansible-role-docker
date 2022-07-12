@@ -1,3 +1,6 @@
+---
 skip_list:
-  - 'yaml'
-  - 'role-name'
+
+- 'yaml'
+- 'role-name'
+- 'internal-error'
