@@ -76,6 +76,6 @@
 - name: Docker - Install Docker Compose (if configured).
   ansible.builtin.get_url:
     url: "https://github.com/docker/compose/releases/download/\
-          {{ docker_compose_version }}/docker-compose-linux-x86_64"
+          v{{ docker_compose_version }}/docker-compose-linux-x86_64"
     dest: "{{ docker_compose_path }}"
     mode: 0755
