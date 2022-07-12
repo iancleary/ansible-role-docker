@@ -10,7 +10,7 @@ galaxy_info:
 
   license: MIT
 
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
 
   #
   # Provide a list of supported platforms,
@@ -24,6 +24,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - focal
+        - jammy
 
   galaxy_tags: ['system', 'development']
   # List tags for your role here, one per line.

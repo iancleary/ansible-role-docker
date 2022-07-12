@@ -5,7 +5,8 @@
       - apt-transport-https
       - ca-certificates
       - curl
-      - gnupg-agent
+      - gnupg
+      - lsb-release
       - software-properties-common
     state: present
 
@@ -14,7 +15,7 @@
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
 
-# 20.04 has everything needed within Ubuntu's repositories
+# 20.04+ has everything needed within Ubuntu's repositories
 - name: Docker - Setup Stable Repository 18.04
   ansible.builtin.apt_repository:
     repo: >-
@@ -32,6 +33,19 @@
     name: docker.io
     update_cache: "yes"
   when: ansible_distribution_version == "6" and ansible_os_family == "elementary OS"
+
+- name: Docker - install Docker - 22.04 (Ubuntu)
+  ansible.builtin.apt:
+    name: docker.io
+    update_cache: "yes"
+  when: ansible_distribution_version == "22.04" and ansible_os_family == "Debian"
+
+- name: Docker - install Docker - 22.04 (elementary OS 7)
+  ansible.builtin.apt:
+    name: docker.io
+    update_cache: "yes"
+  when: ansible_distribution_version == "7" and ansible_os_family == "elementary OS"
+
 
 - name: Docker - Create the docker group
   ansible.builtin.group:

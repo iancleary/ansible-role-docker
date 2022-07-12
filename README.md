@@ -27,6 +27,7 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 
 Supported and Tested `ansible_os_families`:
 
+* Ubuntu 22.04
 * Ubuntu 20.04
 
 > Pull Requests welcome!
