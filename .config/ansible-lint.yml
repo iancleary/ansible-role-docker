@@ -1,6 +1,4 @@
-warn_list:
-- internal-error  # Unexpected internal error.
-
 skip_list:
 - 'yaml'
 - 'role-name'
+- 'internal-error'
