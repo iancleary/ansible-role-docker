@@ -37,6 +37,6 @@
 - name: Install python packages for ansible management of docker and docker-compose
   ansible.builtin.pip:
     name: 
-      - docker=="{{docker_pip_version}}""
+      - docker=="{{docker_pip_version}}"
       - docker-compose=="{{docker_compose_pip_version}}"
       - PyYAML
