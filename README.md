@@ -39,28 +39,27 @@ A description of the settable variables for this role should go here, including 
 
 ---
 
-```yaml
-docker_install_compose: true
-```
-Boolean value to install docker-compose
+docker_pip_version: 6.0.0
+docker_compose_pip_version: 1.29.2
+docker_users: []
 
 ---
 
 ```yaml
-docker_compose_version: 1.29.2
+docker_pip_version: 6.0.0
 ```
 
-Release tag to use from [Docker Compose GitHub Repo's Releases](https://github.com/docker/compose/releases/).
-
-> Default to latest stable release at time of writing
+Version to use for [docker pypi package](https://pypi.org/project/docker/).
 
 ---
 
 ```yaml
-docker_compose_path: /usr/local/bin/docker-compose
+docker_compose_pip_version: 1.29.2
 ```
 
-Path to install docker-compose executable to
+Version to use for [docker-compose pypi package](https://pypi.org/project/docker/).
+
+---
 
 ```yaml
 docker_users: []
@@ -84,7 +83,7 @@ Including an example of how to use your role (for instance, with variables passe
 
 ```yaml
 - hosts: servers
-  user: unprivelaged
+  user: nonroot
   roles:
     - role: iancleary.docker
       become: true
