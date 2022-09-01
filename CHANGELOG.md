@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+
+## [5.0.0] - 2022-09-01
+
+- Switch to `docker.io` apt package and `docker-compose` pip (Python) package.to allow docker and docker-compose control via Ansible.  Main benefits are not having to manage architecture version nor manage docker-compose executables.
+
+* https://docs.ansible.com/ansible/latest/collections/community/docker/docker_image_module.html
+* https://docs.ansible.com/ansible/latest/collections/community/general/docker_compose_module.html
+
+
 ## [4.1.0] - 2022-07-12
 
 ### Changed
@@ -74,7 +84,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial role! 🚀
 
-[Unreleased]: https://github.com/iancleary/ansible-role-docker/compare/v4.0.1...HEAD
+[Unreleased]: https://github.com/iancleary/ansible-role-docker/compare/v5.0.0...HEAD
+[5.0.0]: https://github.com/iancleary/ansible-role-docker/releases/tag/v5.0.0
 [4.0.1]: https://github.com/iancleary/ansible-role-docker/releases/tag/v4.0.1
 [4.0.0]: https://github.com/iancleary/ansible-role-docker/releases/tag/v4.0.0
 [3.0.0]: https://github.com/iancleary/ansible-role-docker/releases/tag/v3.0.0
